@@ -43,6 +43,7 @@
 		5A0A29B31A6EB590005F90DD /* circuitVCph.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A0A29B21A6EB590005F90DD /* circuitVCph.png */; };
 		5A0A29B51A6EB738005F90DD /* circuitVhPH.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A0A29B41A6EB738005F90DD /* circuitVhPH.png */; };
 		5A0A29B71A6F1AF8005F90DD /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 5A0A29B61A6F1AF7005F90DD /* white.png */; };
+		5A0A29B91A7156F2005F90DD /* FirstRe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0A29B81A7156F2005F90DD /* FirstRe.swift */; };
 		5A760E061A005B1300932923 /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A760E051A005B1300932923 /* ExercisesViewController.swift */; };
 		5AA0FCD81A01AA3E00488877 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0FCD71A01AA3E00488877 /* Photos.framework */; };
 		5AA0FCDA1A01AA6700488877 /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA0FCD91A01AA6700488877 /* PhotosUI.framework */; };
@@ -105,6 +106,7 @@
 		5A0A29B21A6EB590005F90DD /* circuitVCph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circuitVCph.png; path = "X images for app/circuitVCph.png"; sourceTree = "<group>"; };
 		5A0A29B41A6EB738005F90DD /* circuitVhPH.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = circuitVhPH.png; path = "X images for app/circuitVhPH.png"; sourceTree = SOURCE_ROOT; };
 		5A0A29B61A6F1AF7005F90DD /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = "X images for app/white.png"; sourceTree = SOURCE_ROOT; };
+		5A0A29B81A7156F2005F90DD /* FirstRe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstRe.swift; sourceTree = "<group>"; };
 		5A760E051A005B1300932923 /* ExercisesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
 		5AA0FCD71A01AA3E00488877 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		5AA0FCD91A01AA6700488877 /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				5A0A28FD1A6E6E90005F90DD /* FirstEX.swift */,
+				5A0A29B81A7156F2005F90DD /* FirstRe.swift */,
 			);
 			name = CircuitProgramViews;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0A29B91A7156F2005F90DD /* FirstRe.swift in Sources */,
 				5AA1A7E819FD7B62009B37A8 /* WorkoutViewController.swift in Sources */,
 				5AA1A7E619FAA36E009B37A8 /* ViewController.swift in Sources */,
 				5ACCD0591A3E3635001197BF /* SWViewController.swift in Sources */,

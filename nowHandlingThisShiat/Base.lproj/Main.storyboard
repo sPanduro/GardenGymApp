@@ -160,7 +160,7 @@
                                 </state>
                                 <connections>
                                     <action selector="StartWorkout:" destination="M4g-9D-F5x" eventType="touchUpInside" id="GvW-GY-0ZD"/>
-                                    <segue destination="d7N-Br-Sbx" kind="show" id="xAP-qG-0tk"/>
+                                    <segue destination="Nlo-Rz-ddT" kind="show" id="YUV-gq-WFx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -574,10 +574,10 @@
             </objects>
             <point key="canvasLocation" x="986.5" y="-1734.5"/>
         </scene>
-        <!--FirstEX-->
+        <!--View Controller-->
         <scene sceneID="vME-gU-Hhf">
             <objects>
-                <viewController id="d7N-Br-Sbx" customClass="FirstEX" customModule="nowHandlingThisShiat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="d7N-Br-Sbx" customClass="ViewController" customModule="nowHandlingThisShiat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ijb-pr-6dd"/>
                         <viewControllerLayoutGuide type="bottom" id="1c0-0F-Anh"/>
@@ -628,16 +628,33 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6lexPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="wf2-Ki-wrA">
                                 <rect key="frame" x="5" y="76" width="365" height="585"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzn-6V-dof">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cHU-No-txx"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="6 OF 10" id="mJS-Bm-LUq"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="wf2-Ki-wrA" secondAttribute="trailing" constant="-11" id="3C1-OG-gMf"/>
-                            <constraint firstItem="wf2-Ki-wrA" firstAttribute="leading" secondItem="IxZ-NI-s4h" secondAttribute="leadingMargin" constant="-11" id="48t-MO-DFJ"/>
-                            <constraint firstItem="wf2-Ki-wrA" firstAttribute="centerX" secondItem="IxZ-NI-s4h" secondAttribute="centerX" id="F6d-vt-KHc"/>
-                            <constraint firstItem="wf2-Ki-wrA" firstAttribute="top" secondItem="00f-90-gxN" secondAttribute="bottom" constant="56" id="MA6-lX-pgk"/>
-                            <constraint firstItem="LtW-gH-auD" firstAttribute="top" secondItem="wf2-Ki-wrA" secondAttribute="bottom" constant="6" id="bft-J4-bA7"/>
+                            <constraint firstItem="wf2-Ki-wrA" firstAttribute="centerX" secondItem="wzn-6V-dof" secondAttribute="centerX" id="Bod-Hv-zQ0"/>
+                            <constraint firstItem="wzn-6V-dof" firstAttribute="top" secondItem="00f-90-gxN" secondAttribute="bottom" id="IJt-nV-mwd"/>
+                            <constraint firstItem="wf2-Ki-wrA" firstAttribute="leading" secondItem="IxZ-NI-s4h" secondAttribute="leadingMargin" constant="-11" id="OO3-Vh-nRA"/>
+                            <constraint firstItem="wf2-Ki-wrA" firstAttribute="top" secondItem="wzn-6V-dof" secondAttribute="bottom" constant="12" id="PAg-5f-Ycr"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wf2-Ki-wrA" secondAttribute="trailing" constant="-11" id="Q47-we-zAa"/>
+                            <constraint firstItem="wzn-6V-dof" firstAttribute="leading" secondItem="IxZ-NI-s4h" secondAttribute="leading" id="kO3-py-sz2"/>
+                            <constraint firstItem="LtW-gH-auD" firstAttribute="top" secondItem="wf2-Ki-wrA" secondAttribute="bottom" constant="6" id="oQ4-lg-HFB"/>
+                            <constraint firstAttribute="trailing" secondItem="wzn-6V-dof" secondAttribute="trailing" id="tCD-po-Z5Z"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -660,16 +677,33 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6lrePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="51e-JS-zcl">
                                 <rect key="frame" x="5" y="77" width="364" height="584"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c2W-5Z-nrs">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Q6D-HW-3fQ"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="6 OF 10" id="SOj-qm-iZf"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="51e-JS-zcl" secondAttribute="trailing" constant="-10" id="5g3-nN-cVX"/>
-                            <constraint firstItem="51e-JS-zcl" firstAttribute="centerX" secondItem="an9-CB-6Nz" secondAttribute="centerX" id="7xy-DJ-dig"/>
-                            <constraint firstItem="Sih-Wg-3Pc" firstAttribute="top" secondItem="51e-JS-zcl" secondAttribute="bottom" constant="6" id="OHU-Pd-X6K"/>
-                            <constraint firstItem="51e-JS-zcl" firstAttribute="top" secondItem="INw-fs-0nQ" secondAttribute="bottom" constant="57" id="dUI-Q5-Vkd"/>
-                            <constraint firstItem="51e-JS-zcl" firstAttribute="leading" secondItem="an9-CB-6Nz" secondAttribute="leadingMargin" constant="-11" id="h4h-gh-tWx"/>
+                            <constraint firstItem="Sih-Wg-3Pc" firstAttribute="top" secondItem="51e-JS-zcl" secondAttribute="bottom" constant="6" id="C80-u6-c9U"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="51e-JS-zcl" secondAttribute="trailing" constant="-10" id="M8O-mq-8Sp"/>
+                            <constraint firstItem="51e-JS-zcl" firstAttribute="top" secondItem="c2W-5Z-nrs" secondAttribute="bottom" constant="13" id="OT5-PJ-UfL"/>
+                            <constraint firstItem="c2W-5Z-nrs" firstAttribute="leading" secondItem="an9-CB-6Nz" secondAttribute="leading" id="OxC-cB-SMF"/>
+                            <constraint firstItem="c2W-5Z-nrs" firstAttribute="centerX" secondItem="51e-JS-zcl" secondAttribute="centerX" id="VQ6-EE-aYL"/>
+                            <constraint firstItem="51e-JS-zcl" firstAttribute="leading" secondItem="an9-CB-6Nz" secondAttribute="leadingMargin" constant="-11" id="h2H-KL-kqU"/>
+                            <constraint firstAttribute="trailing" secondItem="c2W-5Z-nrs" secondAttribute="trailing" id="n1q-iG-Lnq"/>
+                            <constraint firstItem="c2W-5Z-nrs" firstAttribute="top" secondItem="INw-fs-0nQ" secondAttribute="bottom" id="zG9-UF-Ozg"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -692,16 +726,33 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6rexPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="Yww-UL-hfo">
                                 <rect key="frame" x="5" y="75" width="365" height="586"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTg-Zk-gHz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="KY0-JT-0Ag"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="6 OF 10" id="zjs-Tp-dls"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="Yww-UL-hfo" secondAttribute="trailing" constant="-11" id="9Oe-fA-9C0"/>
-                            <constraint firstItem="Yww-UL-hfo" firstAttribute="leading" secondItem="zuV-Bx-m3s" secondAttribute="leadingMargin" constant="-11" id="9Wa-Je-ByV"/>
-                            <constraint firstItem="Yww-UL-hfo" firstAttribute="top" secondItem="DFX-cb-CeK" secondAttribute="bottom" constant="55" id="AYi-a5-bYQ"/>
-                            <constraint firstItem="25G-w8-Ovo" firstAttribute="top" secondItem="Yww-UL-hfo" secondAttribute="bottom" constant="6" id="NDu-d8-sOe"/>
-                            <constraint firstItem="Yww-UL-hfo" firstAttribute="centerX" secondItem="zuV-Bx-m3s" secondAttribute="centerX" id="rnv-jB-Hn1"/>
+                            <constraint firstItem="zTg-Zk-gHz" firstAttribute="leading" secondItem="zuV-Bx-m3s" secondAttribute="leading" id="29V-I2-TgZ"/>
+                            <constraint firstItem="25G-w8-Ovo" firstAttribute="top" secondItem="Yww-UL-hfo" secondAttribute="bottom" constant="6" id="4sy-VK-VPU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yww-UL-hfo" secondAttribute="trailing" constant="-11" id="6QI-9P-AaE"/>
+                            <constraint firstAttribute="trailing" secondItem="zTg-Zk-gHz" secondAttribute="trailing" id="ASV-eg-112"/>
+                            <constraint firstItem="Yww-UL-hfo" firstAttribute="top" secondItem="zTg-Zk-gHz" secondAttribute="bottom" constant="11" id="BAJ-mH-p0Q"/>
+                            <constraint firstItem="Yww-UL-hfo" firstAttribute="leading" secondItem="zuV-Bx-m3s" secondAttribute="leadingMargin" constant="-11" id="CAL-jf-4Ot"/>
+                            <constraint firstItem="zTg-Zk-gHz" firstAttribute="top" secondItem="DFX-cb-CeK" secondAttribute="bottom" id="LUd-CG-zGo"/>
+                            <constraint firstItem="zTg-Zk-gHz" firstAttribute="centerX" secondItem="Yww-UL-hfo" secondAttribute="centerX" id="iKn-M7-Zq9"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -724,16 +775,33 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6rre.png" translatesAutoresizingMaskIntoConstraints="NO" id="1LM-8Z-clh">
                                 <rect key="frame" x="5" y="73" width="365" height="588"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lnz-Rc-TuM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="5ml-qA-D3s"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="6 OF 10" id="E37-Pf-BDE"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="u2a-zb-JyP" firstAttribute="top" secondItem="1LM-8Z-clh" secondAttribute="bottom" constant="6" id="2fm-sh-UIt"/>
-                            <constraint firstItem="1LM-8Z-clh" firstAttribute="centerX" secondItem="Ezx-Z1-S8f" secondAttribute="centerX" id="471-Wv-y5v"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="1LM-8Z-clh" secondAttribute="trailing" constant="-11" id="BxY-Pi-a4g"/>
-                            <constraint firstItem="1LM-8Z-clh" firstAttribute="leading" secondItem="Ezx-Z1-S8f" secondAttribute="leadingMargin" constant="-11" id="HVJ-fH-EM6"/>
-                            <constraint firstItem="1LM-8Z-clh" firstAttribute="top" secondItem="vV8-RL-aHG" secondAttribute="bottom" constant="53" id="qGO-Jg-p2K"/>
+                            <constraint firstItem="1LM-8Z-clh" firstAttribute="leading" secondItem="Ezx-Z1-S8f" secondAttribute="leadingMargin" constant="-11" id="5f3-gx-VNA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1LM-8Z-clh" secondAttribute="trailing" constant="-11" id="9g1-ki-19B"/>
+                            <constraint firstItem="Lnz-Rc-TuM" firstAttribute="top" secondItem="vV8-RL-aHG" secondAttribute="bottom" id="H9K-9x-1JO"/>
+                            <constraint firstItem="u2a-zb-JyP" firstAttribute="top" secondItem="1LM-8Z-clh" secondAttribute="bottom" constant="6" id="IeO-Zf-Y2b"/>
+                            <constraint firstItem="Lnz-Rc-TuM" firstAttribute="leading" secondItem="Ezx-Z1-S8f" secondAttribute="leading" id="jRw-XH-XCG"/>
+                            <constraint firstAttribute="trailing" secondItem="Lnz-Rc-TuM" secondAttribute="trailing" id="odm-Vh-mcX"/>
+                            <constraint firstItem="1LM-8Z-clh" firstAttribute="top" secondItem="Lnz-Rc-TuM" secondAttribute="bottom" constant="9" id="sbz-y6-kO5"/>
+                            <constraint firstItem="1LM-8Z-clh" firstAttribute="centerX" secondItem="Lnz-Rc-TuM" secondAttribute="centerX" id="xZ9-T2-CfJ"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -754,18 +822,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5rePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="ywb-bN-gpD">
-                                <rect key="frame" x="5" y="82" width="364" height="580"/>
+                                <rect key="frame" x="5" y="74" width="364" height="588"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="721-e5-vUi">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Xju-ud-F58"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="5 OF 10" id="du9-Hg-ZBo"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ywb-bN-gpD" firstAttribute="top" secondItem="dPo-aD-4w9" secondAttribute="bottom" constant="62" id="IuO-z2-JAv"/>
-                            <constraint firstItem="ywb-bN-gpD" firstAttribute="centerX" secondItem="ehd-Qw-sGF" secondAttribute="centerX" id="bTb-fA-Hre"/>
-                            <constraint firstItem="ywb-bN-gpD" firstAttribute="leading" secondItem="ehd-Qw-sGF" secondAttribute="leadingMargin" constant="-11" id="byu-Tj-ONp"/>
-                            <constraint firstItem="G25-DO-sFQ" firstAttribute="top" secondItem="ywb-bN-gpD" secondAttribute="bottom" constant="5" id="gAG-3q-hga"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ywb-bN-gpD" secondAttribute="trailing" constant="-10" id="orc-gn-Zu0"/>
+                            <constraint firstItem="721-e5-vUi" firstAttribute="top" secondItem="dPo-aD-4w9" secondAttribute="bottom" id="02V-zW-M29"/>
+                            <constraint firstAttribute="trailing" secondItem="721-e5-vUi" secondAttribute="trailing" id="OGI-nE-yys"/>
+                            <constraint firstItem="721-e5-vUi" firstAttribute="leading" secondItem="ehd-Qw-sGF" secondAttribute="leading" id="QR6-1N-ZtW"/>
+                            <constraint firstItem="ywb-bN-gpD" firstAttribute="centerX" secondItem="721-e5-vUi" secondAttribute="centerX" id="RQI-nZ-xhk"/>
+                            <constraint firstItem="ywb-bN-gpD" firstAttribute="top" secondItem="721-e5-vUi" secondAttribute="bottom" constant="10" id="S6n-FJ-ply"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ywb-bN-gpD" secondAttribute="trailing" constant="-10" id="YmW-tv-ulS"/>
+                            <constraint firstItem="G25-DO-sFQ" firstAttribute="top" secondItem="ywb-bN-gpD" secondAttribute="bottom" constant="5" id="Zzl-uP-DOZ"/>
+                            <constraint firstItem="ywb-bN-gpD" firstAttribute="leading" secondItem="ehd-Qw-sGF" secondAttribute="leadingMargin" constant="-11" id="tqS-3p-dXb"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tus-uj-7A0" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -785,18 +870,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7lexPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="pRK-on-mOU">
-                                <rect key="frame" x="5" y="83" width="364" height="579"/>
+                                <rect key="frame" x="5" y="73" width="365" height="589"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0hw-z4-3hA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ras-0h-lw5"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="7 OF 10" id="fmM-4y-9ic"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dfI-EH-Fbq" firstAttribute="top" secondItem="pRK-on-mOU" secondAttribute="bottom" constant="5" id="7Xv-j7-xAd"/>
-                            <constraint firstItem="pRK-on-mOU" firstAttribute="centerX" secondItem="DhE-yZ-o4w" secondAttribute="centerX" id="GHF-Aj-l3U"/>
-                            <constraint firstItem="pRK-on-mOU" firstAttribute="leading" secondItem="DhE-yZ-o4w" secondAttribute="leadingMargin" constant="-11" id="VlM-DQ-grR"/>
-                            <constraint firstItem="pRK-on-mOU" firstAttribute="top" secondItem="IzT-Um-ag5" secondAttribute="bottom" constant="63" id="anB-iU-LYf"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="pRK-on-mOU" secondAttribute="trailing" constant="-10" id="xVg-fa-NfV"/>
+                            <constraint firstItem="0hw-z4-3hA" firstAttribute="top" secondItem="IzT-Um-ag5" secondAttribute="bottom" id="92q-5h-wcf"/>
+                            <constraint firstItem="pRK-on-mOU" firstAttribute="leading" secondItem="DhE-yZ-o4w" secondAttribute="leadingMargin" constant="-11" id="AwL-Aq-HpV"/>
+                            <constraint firstItem="dfI-EH-Fbq" firstAttribute="top" secondItem="pRK-on-mOU" secondAttribute="bottom" constant="5" id="OeJ-pH-GvQ"/>
+                            <constraint firstItem="pRK-on-mOU" firstAttribute="centerX" secondItem="0hw-z4-3hA" secondAttribute="centerX" id="P3x-Ib-Nel"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pRK-on-mOU" secondAttribute="trailing" constant="-11" id="S6t-yT-Edh"/>
+                            <constraint firstItem="pRK-on-mOU" firstAttribute="top" secondItem="0hw-z4-3hA" secondAttribute="bottom" constant="9" id="nTs-Sa-Tww"/>
+                            <constraint firstAttribute="trailing" secondItem="0hw-z4-3hA" secondAttribute="trailing" id="snu-Gq-e7o"/>
+                            <constraint firstItem="0hw-z4-3hA" firstAttribute="leading" secondItem="DhE-yZ-o4w" secondAttribute="leading" id="vYq-VQ-cCL"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -817,18 +919,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8rePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="ynR-5m-dtP">
-                                <rect key="frame" x="5" y="80" width="364" height="582"/>
+                                <rect key="frame" x="5" y="74" width="364" height="588"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogN-O0-IOG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="RqO-SJ-Caw"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="8 OF 10" id="XzQ-Yi-6n8"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="brn-7N-Fj6" firstAttribute="top" secondItem="ynR-5m-dtP" secondAttribute="bottom" constant="5" id="9dT-6n-eo1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="ynR-5m-dtP" secondAttribute="trailing" constant="-10" id="IwD-St-QWo"/>
-                            <constraint firstItem="ynR-5m-dtP" firstAttribute="leading" secondItem="ZYd-r0-jhk" secondAttribute="leadingMargin" constant="-11" id="VLL-nf-Y3i"/>
-                            <constraint firstItem="ynR-5m-dtP" firstAttribute="top" secondItem="wYv-1K-Tgm" secondAttribute="bottom" constant="60" id="bj4-zy-Pa3"/>
-                            <constraint firstItem="ynR-5m-dtP" firstAttribute="centerX" secondItem="ZYd-r0-jhk" secondAttribute="centerX" id="nnR-8U-I50"/>
+                            <constraint firstItem="ynR-5m-dtP" firstAttribute="leading" secondItem="ZYd-r0-jhk" secondAttribute="leadingMargin" constant="-11" id="DIb-0z-aLG"/>
+                            <constraint firstItem="ogN-O0-IOG" firstAttribute="centerX" secondItem="ynR-5m-dtP" secondAttribute="centerX" id="LYW-wt-Svr"/>
+                            <constraint firstItem="ogN-O0-IOG" firstAttribute="top" secondItem="wYv-1K-Tgm" secondAttribute="bottom" id="ZOc-cA-rjs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ynR-5m-dtP" secondAttribute="trailing" constant="-10" id="dd0-HN-Xx0"/>
+                            <constraint firstItem="ynR-5m-dtP" firstAttribute="top" secondItem="ogN-O0-IOG" secondAttribute="bottom" constant="10" id="iSq-dG-7tP"/>
+                            <constraint firstAttribute="trailing" secondItem="ogN-O0-IOG" secondAttribute="trailing" id="nTD-bM-jhb"/>
+                            <constraint firstItem="brn-7N-Fj6" firstAttribute="top" secondItem="ynR-5m-dtP" secondAttribute="bottom" constant="5" id="pE9-X8-Nxs"/>
+                            <constraint firstItem="ogN-O0-IOG" firstAttribute="leading" secondItem="ZYd-r0-jhk" secondAttribute="leading" id="sSI-QK-7F3"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -849,18 +968,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9lexPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="bg4-bA-Hgd">
-                                <rect key="frame" x="5" y="78" width="364" height="584"/>
+                                <rect key="frame" x="5" y="74" width="364" height="588"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwp-jy-v9g">
+                                <rect key="frame" x="-1" y="19" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="fC5-UD-3Da"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="9 OF 10" id="ebx-Gd-9hz"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="oNM-lE-37Y" firstAttribute="top" secondItem="bg4-bA-Hgd" secondAttribute="bottom" constant="5" id="5QF-fX-k0B"/>
-                            <constraint firstItem="bg4-bA-Hgd" firstAttribute="leading" secondItem="rtH-Bm-v8S" secondAttribute="leadingMargin" constant="-11" id="GOR-Jg-WMw"/>
-                            <constraint firstItem="bg4-bA-Hgd" firstAttribute="top" secondItem="GAR-Jb-16w" secondAttribute="bottom" constant="58" id="Wmr-rW-d1Z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bg4-bA-Hgd" secondAttribute="trailing" constant="-10" id="Wx3-GF-a86"/>
-                            <constraint firstItem="bg4-bA-Hgd" firstAttribute="centerX" secondItem="rtH-Bm-v8S" secondAttribute="centerX" id="u7O-Bj-Hbz"/>
+                            <constraint firstItem="bg4-bA-Hgd" firstAttribute="centerX" secondItem="rtH-Bm-v8S" secondAttribute="centerX" id="2xl-7S-VQb"/>
+                            <constraint firstItem="oNM-lE-37Y" firstAttribute="top" secondItem="bg4-bA-Hgd" secondAttribute="bottom" constant="5" id="JSE-Qn-kvN"/>
+                            <constraint firstItem="Vwp-jy-v9g" firstAttribute="top" secondItem="rtH-Bm-v8S" secondAttribute="topMargin" constant="19" id="L8c-Qn-Ut4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bg4-bA-Hgd" secondAttribute="trailing" constant="-10" id="VV2-Im-7Jk"/>
+                            <constraint firstItem="Vwp-jy-v9g" firstAttribute="leading" secondItem="rtH-Bm-v8S" secondAttribute="leadingMargin" constant="-17" id="bJC-Uk-oRQ"/>
+                            <constraint firstItem="bg4-bA-Hgd" firstAttribute="top" secondItem="Vwp-jy-v9g" secondAttribute="bottom" constant="11" id="egn-bI-dK8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vwp-jy-v9g" secondAttribute="trailing" constant="-15" id="mQR-lW-kub"/>
+                            <constraint firstItem="bg4-bA-Hgd" firstAttribute="leading" secondItem="rtH-Bm-v8S" secondAttribute="leadingMargin" constant="-11" id="vJ0-Le-TDU"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -881,17 +1017,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9lrePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="zoO-YY-lqS">
-                                <rect key="frame" x="7" y="76" width="363" height="585"/>
+                                <rect key="frame" x="7" y="73" width="363" height="588"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C4h-GE-vB5">
+                                <rect key="frame" x="0.0" y="19" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2rp-9U-AUj"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="9 OF 10" id="stm-sk-P6I"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="zoO-YY-lqS" firstAttribute="top" secondItem="dyg-cs-TbP" secondAttribute="bottom" constant="56" id="2Gv-XC-3Rj"/>
-                            <constraint firstItem="zoO-YY-lqS" firstAttribute="leading" secondItem="fIX-qk-0j1" secondAttribute="leadingMargin" constant="-9" id="HMZ-IN-upv"/>
-                            <constraint firstItem="fMt-el-Whh" firstAttribute="top" secondItem="zoO-YY-lqS" secondAttribute="bottom" constant="6" id="N45-jn-J7l"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="zoO-YY-lqS" secondAttribute="trailing" constant="-11" id="X6D-nF-c1u"/>
+                            <constraint firstItem="C4h-GE-vB5" firstAttribute="top" secondItem="fIX-qk-0j1" secondAttribute="topMargin" constant="19" id="3pX-ob-IJt"/>
+                            <constraint firstItem="zoO-YY-lqS" firstAttribute="top" secondItem="C4h-GE-vB5" secondAttribute="bottom" constant="10" id="9bS-XO-tlr"/>
+                            <constraint firstItem="fMt-el-Whh" firstAttribute="top" secondItem="zoO-YY-lqS" secondAttribute="bottom" constant="6" id="dJq-Nw-Uuu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zoO-YY-lqS" secondAttribute="trailing" constant="-11" id="dOH-Ni-V27"/>
+                            <constraint firstAttribute="centerX" secondItem="zoO-YY-lqS" secondAttribute="centerX" constant="-1" id="hOi-9i-hZo"/>
+                            <constraint firstItem="zoO-YY-lqS" firstAttribute="leading" secondItem="fIX-qk-0j1" secondAttribute="leadingMargin" constant="-9" id="jJb-Gk-HAK"/>
+                            <constraint firstAttribute="trailing" secondItem="C4h-GE-vB5" secondAttribute="trailing" id="pNs-gF-YVj"/>
+                            <constraint firstItem="C4h-GE-vB5" firstAttribute="leading" secondItem="fIX-qk-0j1" secondAttribute="leading" id="wGs-Z4-xf7"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -912,18 +1066,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9rexPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="HYq-bl-MtS">
-                                <rect key="frame" x="5" y="77" width="364" height="584"/>
+                                <rect key="frame" x="5" y="73" width="364" height="588"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="reH-Lk-sbM">
+                                <rect key="frame" x="0.0" y="19" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="kVh-JA-936"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="9 OF 10" id="0GB-r7-JU7"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="pgb-T1-oLM" firstAttribute="top" secondItem="HYq-bl-MtS" secondAttribute="bottom" constant="6" id="GTM-Gb-hBG"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HYq-bl-MtS" secondAttribute="trailing" constant="-10" id="GeQ-ee-rkC"/>
-                            <constraint firstItem="HYq-bl-MtS" firstAttribute="leading" secondItem="HeR-6P-RAz" secondAttribute="leadingMargin" constant="-11" id="N4k-F7-d8A"/>
-                            <constraint firstItem="HYq-bl-MtS" firstAttribute="top" secondItem="z19-5s-wk7" secondAttribute="bottom" constant="57" id="i7i-CT-ZSZ"/>
-                            <constraint firstItem="HYq-bl-MtS" firstAttribute="centerX" secondItem="HeR-6P-RAz" secondAttribute="centerX" id="sX7-oc-Ppd"/>
+                            <constraint firstItem="HYq-bl-MtS" firstAttribute="leading" secondItem="HeR-6P-RAz" secondAttribute="leadingMargin" constant="-11" id="6Ne-gy-hCZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HYq-bl-MtS" secondAttribute="trailing" constant="-10" id="FT7-4l-4S7"/>
+                            <constraint firstItem="reH-Lk-sbM" firstAttribute="top" secondItem="HeR-6P-RAz" secondAttribute="topMargin" constant="19" id="HdI-IT-oYK"/>
+                            <constraint firstAttribute="trailing" secondItem="reH-Lk-sbM" secondAttribute="trailing" id="dTC-C5-wC8"/>
+                            <constraint firstItem="reH-Lk-sbM" firstAttribute="centerX" secondItem="HYq-bl-MtS" secondAttribute="centerX" id="jYQ-uk-XOr"/>
+                            <constraint firstItem="reH-Lk-sbM" firstAttribute="leading" secondItem="HeR-6P-RAz" secondAttribute="leading" id="o1M-B3-u6P"/>
+                            <constraint firstItem="pgb-T1-oLM" firstAttribute="top" secondItem="HYq-bl-MtS" secondAttribute="bottom" constant="6" id="u1K-jf-edI"/>
+                            <constraint firstItem="HYq-bl-MtS" firstAttribute="top" secondItem="reH-Lk-sbM" secondAttribute="bottom" constant="10" id="yBh-qQ-Dzg"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -944,18 +1115,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="10exPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="SIB-Xs-k6e">
-                                <rect key="frame" x="6" y="76" width="363" height="585"/>
+                                <rect key="frame" x="6" y="73" width="363" height="588"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ejp-7y-2BN">
+                                <rect key="frame" x="0.0" y="19" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="eYr-Ru-bad"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="10 OF 10" id="Rui-Vt-gqW"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="SIB-Xs-k6e" firstAttribute="top" secondItem="Beb-dn-k1f" secondAttribute="bottom" constant="56" id="CIw-iG-no0"/>
-                            <constraint firstItem="SIB-Xs-k6e" firstAttribute="leading" secondItem="sB5-bg-hUM" secondAttribute="leadingMargin" constant="-10" id="GM5-Cp-zKa"/>
-                            <constraint firstItem="C7e-s4-9Lg" firstAttribute="top" secondItem="SIB-Xs-k6e" secondAttribute="bottom" constant="6" id="SOa-Kj-yZa"/>
-                            <constraint firstItem="SIB-Xs-k6e" firstAttribute="centerX" secondItem="sB5-bg-hUM" secondAttribute="centerX" id="Uee-7m-J64"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="SIB-Xs-k6e" secondAttribute="trailing" constant="-10" id="vWj-3k-8o2"/>
+                            <constraint firstItem="SIB-Xs-k6e" firstAttribute="leading" secondItem="sB5-bg-hUM" secondAttribute="leadingMargin" constant="-10" id="ADx-5S-3LS"/>
+                            <constraint firstItem="ejp-7y-2BN" firstAttribute="leading" secondItem="sB5-bg-hUM" secondAttribute="leading" id="HTV-Je-9s2"/>
+                            <constraint firstItem="ejp-7y-2BN" firstAttribute="top" secondItem="sB5-bg-hUM" secondAttribute="topMargin" constant="19" id="XSW-Mk-kr9"/>
+                            <constraint firstItem="SIB-Xs-k6e" firstAttribute="top" secondItem="ejp-7y-2BN" secondAttribute="bottom" constant="10" id="kFO-bP-z3g"/>
+                            <constraint firstItem="C7e-s4-9Lg" firstAttribute="top" secondItem="SIB-Xs-k6e" secondAttribute="bottom" constant="6" id="kxT-AI-8Va"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SIB-Xs-k6e" secondAttribute="trailing" constant="-10" id="lcn-S8-Ejf"/>
+                            <constraint firstItem="SIB-Xs-k6e" firstAttribute="centerX" secondItem="ejp-7y-2BN" secondAttribute="centerX" id="oJq-Te-Vs1"/>
+                            <constraint firstAttribute="trailing" secondItem="ejp-7y-2BN" secondAttribute="trailing" id="qs6-aQ-yQZ"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -975,12 +1163,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="9rrePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-om-wpZ">
-                                <rect key="frame" x="6" y="76" width="363" height="584"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9rrePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="2xc-om-wpZ">
+                                <rect key="frame" x="6" y="73" width="363" height="587"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSa-UZ-kw9">
+                                <rect key="frame" x="0.0" y="19" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="AUR-9X-vb9"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="9 OF 10" id="iPL-wl-L3Q"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pSa-UZ-kw9" firstAttribute="centerX" secondItem="2xc-om-wpZ" secondAttribute="centerX" id="C7m-BO-y2R"/>
+                            <constraint firstItem="pSa-UZ-kw9" firstAttribute="top" secondItem="fG1-5f-XiK" secondAttribute="topMargin" constant="19" id="Hn4-FF-UA0"/>
+                            <constraint firstItem="PqD-aV-CMi" firstAttribute="top" secondItem="2xc-om-wpZ" secondAttribute="bottom" constant="7" id="WMY-Oc-W3B"/>
+                            <constraint firstItem="2xc-om-wpZ" firstAttribute="leading" secondItem="fG1-5f-XiK" secondAttribute="leadingMargin" constant="-10" id="dZh-hi-1rY"/>
+                            <constraint firstItem="pSa-UZ-kw9" firstAttribute="leading" secondItem="fG1-5f-XiK" secondAttribute="leading" id="evS-dJ-WEX"/>
+                            <constraint firstAttribute="trailing" secondItem="pSa-UZ-kw9" secondAttribute="trailing" id="gz9-hB-wHE"/>
+                            <constraint firstItem="2xc-om-wpZ" firstAttribute="top" secondItem="pSa-UZ-kw9" secondAttribute="bottom" constant="10" id="jfb-jE-0hc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2xc-om-wpZ" secondAttribute="trailing" constant="-10" id="lWw-ob-gb6"/>
+                        </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1001,18 +1213,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7lrePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="GAs-ow-RRq">
-                                <rect key="frame" x="6" y="79" width="363" height="582"/>
+                                <rect key="frame" x="6" y="74" width="363" height="587"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVg-q3-XuF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hCl-4g-tEp"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="7 OF 10" id="M4h-HG-VfD"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="GAs-ow-RRq" firstAttribute="centerX" secondItem="6z1-5Z-JzU" secondAttribute="centerX" id="Hju-LR-AoY"/>
-                            <constraint firstItem="B3u-gh-5hP" firstAttribute="top" secondItem="GAs-ow-RRq" secondAttribute="bottom" constant="6" id="I6H-CS-DKG"/>
-                            <constraint firstItem="GAs-ow-RRq" firstAttribute="top" secondItem="QI4-3a-CnM" secondAttribute="bottom" constant="59" id="UfU-6I-YN8"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GAs-ow-RRq" secondAttribute="trailing" constant="-10" id="hew-RZ-J1G"/>
-                            <constraint firstItem="GAs-ow-RRq" firstAttribute="leading" secondItem="6z1-5Z-JzU" secondAttribute="leadingMargin" constant="-10" id="m1d-sj-ukX"/>
+                            <constraint firstItem="GAs-ow-RRq" firstAttribute="centerX" secondItem="fVg-q3-XuF" secondAttribute="centerX" id="4Yi-mP-Qsa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GAs-ow-RRq" secondAttribute="trailing" constant="-10" id="F71-re-uZv"/>
+                            <constraint firstItem="fVg-q3-XuF" firstAttribute="top" secondItem="QI4-3a-CnM" secondAttribute="bottom" id="Ipz-2M-bnB"/>
+                            <constraint firstItem="B3u-gh-5hP" firstAttribute="top" secondItem="GAs-ow-RRq" secondAttribute="bottom" constant="6" id="ZBu-GZ-gA5"/>
+                            <constraint firstItem="GAs-ow-RRq" firstAttribute="top" secondItem="fVg-q3-XuF" secondAttribute="bottom" constant="10" id="a2K-D8-rBS"/>
+                            <constraint firstItem="GAs-ow-RRq" firstAttribute="leading" secondItem="6z1-5Z-JzU" secondAttribute="leadingMargin" constant="-10" id="ihg-ML-QT5"/>
+                            <constraint firstAttribute="trailing" secondItem="fVg-q3-XuF" secondAttribute="trailing" id="lMf-rK-uzp"/>
+                            <constraint firstItem="fVg-q3-XuF" firstAttribute="leading" secondItem="6z1-5Z-JzU" secondAttribute="leading" id="wyD-aW-7zb"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1033,17 +1262,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7rexPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="qh3-Cw-J1N">
-                                <rect key="frame" x="5" y="77" width="366" height="585"/>
+                                <rect key="frame" x="5" y="74" width="364" height="588"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2LR-Uq-qWS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="neZ-5T-fwc"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="7 OF 10" id="hdy-tf-oJE"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="qh3-Cw-J1N" firstAttribute="leading" secondItem="KX0-4b-WKI" secondAttribute="leadingMargin" constant="-11" id="6Lq-cv-QT4"/>
-                            <constraint firstItem="jea-eB-rju" firstAttribute="top" secondItem="qh3-Cw-J1N" secondAttribute="bottom" constant="5" id="WcO-qS-AAB"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="qh3-Cw-J1N" secondAttribute="trailing" constant="-12" id="bag-1u-jWy"/>
-                            <constraint firstItem="qh3-Cw-J1N" firstAttribute="top" secondItem="67q-mj-cyV" secondAttribute="bottom" constant="57" id="zsu-oa-vaQ"/>
+                            <constraint firstItem="2LR-Uq-qWS" firstAttribute="leading" secondItem="KX0-4b-WKI" secondAttribute="leading" id="3ab-MC-FKQ"/>
+                            <constraint firstItem="jea-eB-rju" firstAttribute="top" secondItem="qh3-Cw-J1N" secondAttribute="bottom" constant="5" id="ERu-PT-Otl"/>
+                            <constraint firstAttribute="trailing" secondItem="2LR-Uq-qWS" secondAttribute="trailing" id="aH8-4W-8BH"/>
+                            <constraint firstItem="2LR-Uq-qWS" firstAttribute="top" secondItem="67q-mj-cyV" secondAttribute="bottom" id="dxs-ui-aSf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qh3-Cw-J1N" secondAttribute="trailing" constant="-10" id="mQs-Vv-fbt"/>
+                            <constraint firstItem="qh3-Cw-J1N" firstAttribute="centerX" secondItem="2LR-Uq-qWS" secondAttribute="centerX" id="tEf-6a-kfc"/>
+                            <constraint firstItem="qh3-Cw-J1N" firstAttribute="top" secondItem="2LR-Uq-qWS" secondAttribute="bottom" constant="10" id="v8j-Yl-xbA"/>
+                            <constraint firstItem="qh3-Cw-J1N" firstAttribute="leading" secondItem="KX0-4b-WKI" secondAttribute="leadingMargin" constant="-11" id="yWx-f8-JYJ"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1064,18 +1311,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7rrePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="lGF-bM-Jtr">
-                                <rect key="frame" x="4" y="76" width="367" height="587"/>
+                                <rect key="frame" x="4" y="74" width="367" height="589"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TYi-tj-Iwz">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="L15-3J-Nev"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="7 OF 10" id="J4K-Fn-45S"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="W06-DM-14v" firstAttribute="top" secondItem="lGF-bM-Jtr" secondAttribute="bottom" constant="4" id="LWO-03-ajh"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lGF-bM-Jtr" secondAttribute="trailing" constant="-12" id="VRR-wd-c42"/>
-                            <constraint firstItem="lGF-bM-Jtr" firstAttribute="centerX" secondItem="tbC-vl-dgx" secondAttribute="centerX" id="ao8-WI-Dgf"/>
-                            <constraint firstItem="lGF-bM-Jtr" firstAttribute="leading" secondItem="tbC-vl-dgx" secondAttribute="leadingMargin" constant="-12" id="gGq-ig-Vrh"/>
-                            <constraint firstItem="lGF-bM-Jtr" firstAttribute="top" secondItem="H3l-9K-flX" secondAttribute="bottom" constant="56" id="haW-zJ-vQ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lGF-bM-Jtr" secondAttribute="trailing" constant="-12" id="HLI-yJ-UtH"/>
+                            <constraint firstAttribute="trailing" secondItem="TYi-tj-Iwz" secondAttribute="trailing" id="MBY-Dy-TyN"/>
+                            <constraint firstItem="TYi-tj-Iwz" firstAttribute="leading" secondItem="tbC-vl-dgx" secondAttribute="leading" id="O7e-f8-qjA"/>
+                            <constraint firstItem="W06-DM-14v" firstAttribute="top" secondItem="lGF-bM-Jtr" secondAttribute="bottom" constant="4" id="Wuw-bB-mas"/>
+                            <constraint firstItem="lGF-bM-Jtr" firstAttribute="leading" secondItem="tbC-vl-dgx" secondAttribute="leadingMargin" constant="-12" id="jqz-kf-hq7"/>
+                            <constraint firstItem="TYi-tj-Iwz" firstAttribute="centerX" secondItem="lGF-bM-Jtr" secondAttribute="centerX" id="qE5-Mp-Jxb"/>
+                            <constraint firstItem="TYi-tj-Iwz" firstAttribute="top" secondItem="H3l-9K-flX" secondAttribute="bottom" id="qnH-L7-B2j"/>
+                            <constraint firstItem="lGF-bM-Jtr" firstAttribute="top" secondItem="TYi-tj-Iwz" secondAttribute="bottom" constant="10" id="xxF-JF-T3N"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1096,18 +1360,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8exPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="VLH-2A-Kdh">
-                                <rect key="frame" x="4" y="77" width="366" height="584"/>
+                                <rect key="frame" x="4" y="74" width="366" height="587"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PEQ-Wh-YIG">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="79n-Rn-LGr"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="8 OF 10" id="lt7-dZ-MjX"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="VLH-2A-Kdh" secondAttribute="trailing" constant="-11" id="1jc-Kg-1ae"/>
-                            <constraint firstItem="VLH-2A-Kdh" firstAttribute="top" secondItem="UNc-1f-yAp" secondAttribute="bottom" constant="57" id="318-9p-vmp"/>
-                            <constraint firstItem="VLH-2A-Kdh" firstAttribute="centerX" secondItem="dxg-Ej-w4i" secondAttribute="centerX" id="6yH-G9-35l"/>
-                            <constraint firstItem="XpQ-9W-Ips" firstAttribute="top" secondItem="VLH-2A-Kdh" secondAttribute="bottom" constant="6" id="PPJ-Mt-FkB"/>
-                            <constraint firstItem="VLH-2A-Kdh" firstAttribute="leading" secondItem="dxg-Ej-w4i" secondAttribute="leadingMargin" constant="-12" id="uec-0V-Iuh"/>
+                            <constraint firstAttribute="trailing" secondItem="PEQ-Wh-YIG" secondAttribute="trailing" id="2hJ-9G-PnM"/>
+                            <constraint firstItem="PEQ-Wh-YIG" firstAttribute="centerX" secondItem="VLH-2A-Kdh" secondAttribute="centerX" id="Aqt-iG-cY3"/>
+                            <constraint firstItem="PEQ-Wh-YIG" firstAttribute="leading" secondItem="dxg-Ej-w4i" secondAttribute="leading" id="Q8n-6Y-Q2r"/>
+                            <constraint firstItem="PEQ-Wh-YIG" firstAttribute="top" secondItem="UNc-1f-yAp" secondAttribute="bottom" id="U5n-xP-0Bf"/>
+                            <constraint firstItem="VLH-2A-Kdh" firstAttribute="leading" secondItem="dxg-Ej-w4i" secondAttribute="leadingMargin" constant="-12" id="UgU-eX-J1s"/>
+                            <constraint firstItem="XpQ-9W-Ips" firstAttribute="top" secondItem="VLH-2A-Kdh" secondAttribute="bottom" constant="6" id="jIP-XF-mek"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VLH-2A-Kdh" secondAttribute="trailing" constant="-11" id="lMF-DB-jAd"/>
+                            <constraint firstItem="VLH-2A-Kdh" firstAttribute="top" secondItem="PEQ-Wh-YIG" secondAttribute="bottom" constant="10" id="wAS-fs-gfM"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1128,18 +1409,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3exPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="G3n-1c-OY1">
-                                <rect key="frame" x="5" y="89" width="364" height="573"/>
+                                <rect key="frame" x="5" y="72" width="364" height="590"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y65-r1-T0b">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="odM-dM-C3t"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="3 OF 10" id="bkC-Om-sqG"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="eYP-8F-HZp" firstAttribute="top" secondItem="G3n-1c-OY1" secondAttribute="bottom" constant="5" id="4ma-yo-ycu"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="G3n-1c-OY1" secondAttribute="trailing" constant="-10" id="KMd-pX-Tcf"/>
-                            <constraint firstItem="G3n-1c-OY1" firstAttribute="top" secondItem="WVu-a5-V6C" secondAttribute="bottom" constant="69" id="Pl9-nI-fs3"/>
-                            <constraint firstItem="G3n-1c-OY1" firstAttribute="leading" secondItem="wPj-bC-go9" secondAttribute="leadingMargin" constant="-11" id="elN-4c-rA0"/>
-                            <constraint firstItem="G3n-1c-OY1" firstAttribute="centerX" secondItem="wPj-bC-go9" secondAttribute="centerX" id="v8O-bi-w7J"/>
+                            <constraint firstItem="eYP-8F-HZp" firstAttribute="top" secondItem="G3n-1c-OY1" secondAttribute="bottom" constant="5" id="0uz-MR-ggO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="G3n-1c-OY1" secondAttribute="trailing" constant="-10" id="5IS-FQ-TGW"/>
+                            <constraint firstItem="G3n-1c-OY1" firstAttribute="centerX" secondItem="y65-r1-T0b" secondAttribute="centerX" id="Lvw-Wf-EQr"/>
+                            <constraint firstItem="y65-r1-T0b" firstAttribute="leading" secondItem="wPj-bC-go9" secondAttribute="leading" id="cea-Lw-1ef"/>
+                            <constraint firstItem="G3n-1c-OY1" firstAttribute="top" secondItem="y65-r1-T0b" secondAttribute="bottom" constant="8" id="gIT-A3-tSn"/>
+                            <constraint firstItem="G3n-1c-OY1" firstAttribute="leading" secondItem="wPj-bC-go9" secondAttribute="leadingMargin" constant="-11" id="kVM-Ts-UWr"/>
+                            <constraint firstAttribute="trailing" secondItem="y65-r1-T0b" secondAttribute="trailing" id="uUI-sJ-Lg2"/>
+                            <constraint firstItem="y65-r1-T0b" firstAttribute="top" secondItem="WVu-a5-V6C" secondAttribute="bottom" id="wdF-3d-EPz"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1160,18 +1458,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3re.png" translatesAutoresizingMaskIntoConstraints="NO" id="YQ5-d6-8RU">
-                                <rect key="frame" x="5" y="88" width="364" height="574"/>
+                                <rect key="frame" x="5" y="71" width="365" height="591"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKZ-ke-aIp">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Qmb-Sp-Sj1"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="3 OF 10" id="5F6-0y-F4K"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="YQ5-d6-8RU" secondAttribute="trailing" constant="-10" id="9uy-mE-i50"/>
-                            <constraint firstItem="dna-DI-1Uz" firstAttribute="top" secondItem="YQ5-d6-8RU" secondAttribute="bottom" constant="5" id="Phh-cZ-dgL"/>
-                            <constraint firstItem="YQ5-d6-8RU" firstAttribute="centerX" secondItem="iUy-n3-mHI" secondAttribute="centerX" id="TtO-lP-EeT"/>
-                            <constraint firstItem="YQ5-d6-8RU" firstAttribute="leading" secondItem="iUy-n3-mHI" secondAttribute="leadingMargin" constant="-11" id="cWu-Ql-r1c"/>
-                            <constraint firstItem="YQ5-d6-8RU" firstAttribute="top" secondItem="88g-Cw-PDL" secondAttribute="bottom" constant="68" id="tuS-nb-kKv"/>
+                            <constraint firstAttribute="trailing" secondItem="SKZ-ke-aIp" secondAttribute="trailing" id="4Lk-tB-lqH"/>
+                            <constraint firstItem="YQ5-d6-8RU" firstAttribute="top" secondItem="SKZ-ke-aIp" secondAttribute="bottom" constant="7" id="FjR-kT-Njd"/>
+                            <constraint firstItem="SKZ-ke-aIp" firstAttribute="top" secondItem="88g-Cw-PDL" secondAttribute="bottom" id="M2V-Ke-5HH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YQ5-d6-8RU" secondAttribute="trailing" constant="-11" id="Oat-PA-UqU"/>
+                            <constraint firstItem="SKZ-ke-aIp" firstAttribute="centerX" secondItem="YQ5-d6-8RU" secondAttribute="centerX" id="cAM-pH-PZg"/>
+                            <constraint firstItem="YQ5-d6-8RU" firstAttribute="leading" secondItem="iUy-n3-mHI" secondAttribute="leadingMargin" constant="-11" id="niO-m9-iHd"/>
+                            <constraint firstItem="dna-DI-1Uz" firstAttribute="top" secondItem="YQ5-d6-8RU" secondAttribute="bottom" constant="5" id="plD-DX-vod"/>
+                            <constraint firstItem="SKZ-ke-aIp" firstAttribute="leading" secondItem="iUy-n3-mHI" secondAttribute="leading" id="yso-SL-FzY"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1191,9 +1506,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4ex.png" translatesAutoresizingMaskIntoConstraints="NO" id="rLz-69-ooP">
-                                <rect key="frame" x="6" y="88" width="362" height="573"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="4ex.png" translatesAutoresizingMaskIntoConstraints="NO" id="rLz-69-ooP">
+                                <rect key="frame" x="6" y="72" width="363" height="589"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrt-9l-Ljh">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="4 OF 10" id="665-Ok-7xU"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1204,6 +1529,7 @@
                             <constraint firstItem="rLz-69-ooP" firstAttribute="centerX" secondItem="lb0-VH-RFd" secondAttribute="centerX" id="nMu-US-YcW"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1224,18 +1550,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4rePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="HpN-MV-Nj7">
-                                <rect key="frame" x="6" y="86" width="363" height="575"/>
+                                <rect key="frame" x="6" y="72" width="363" height="589"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNj-0u-XEU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="1gB-5z-cSO"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="4 OF 10" id="C0x-D4-IWm"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="HpN-MV-Nj7" firstAttribute="top" secondItem="wkl-W0-ACl" secondAttribute="bottom" constant="66" id="CQV-jm-udV"/>
-                            <constraint firstItem="HpN-MV-Nj7" firstAttribute="centerX" secondItem="clf-Jj-u9u" secondAttribute="centerX" id="neG-92-Hrd"/>
-                            <constraint firstItem="HpN-MV-Nj7" firstAttribute="leading" secondItem="clf-Jj-u9u" secondAttribute="leadingMargin" constant="-10" id="p5b-EY-I89"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HpN-MV-Nj7" secondAttribute="trailing" constant="-10" id="uoC-WR-qlk"/>
-                            <constraint firstItem="2W6-2g-wbh" firstAttribute="top" secondItem="HpN-MV-Nj7" secondAttribute="bottom" constant="6" id="wrg-kN-rPx"/>
+                            <constraint firstItem="HpN-MV-Nj7" firstAttribute="leading" secondItem="clf-Jj-u9u" secondAttribute="leadingMargin" constant="-10" id="67X-65-58N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HpN-MV-Nj7" secondAttribute="trailing" constant="-10" id="H89-lP-Osd"/>
+                            <constraint firstItem="HpN-MV-Nj7" firstAttribute="centerX" secondItem="KNj-0u-XEU" secondAttribute="centerX" id="JIm-Gl-lSK"/>
+                            <constraint firstAttribute="trailing" secondItem="KNj-0u-XEU" secondAttribute="trailing" id="SAQ-fW-cxt"/>
+                            <constraint firstItem="KNj-0u-XEU" firstAttribute="top" secondItem="wkl-W0-ACl" secondAttribute="bottom" id="eST-Oc-EIa"/>
+                            <constraint firstItem="KNj-0u-XEU" firstAttribute="leading" secondItem="clf-Jj-u9u" secondAttribute="leading" id="eaX-b4-y2e"/>
+                            <constraint firstItem="HpN-MV-Nj7" firstAttribute="top" secondItem="KNj-0u-XEU" secondAttribute="bottom" constant="8" id="xKS-nd-0nU"/>
+                            <constraint firstItem="2W6-2g-wbh" firstAttribute="top" secondItem="HpN-MV-Nj7" secondAttribute="bottom" constant="6" id="xQ9-Cm-NLg"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
@@ -1256,18 +1599,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5exPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="H8k-NK-6DC">
-                                <rect key="frame" x="6" y="84" width="363" height="578"/>
+                                <rect key="frame" x="6" y="73" width="362" height="589"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uPn-PS-dZC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="yue-Wk-8w4"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="5 OF 10" id="h9M-yI-E2g"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="H8k-NK-6DC" firstAttribute="leading" secondItem="OJP-D7-Apa" secondAttribute="leadingMargin" constant="-10" id="GKd-nc-pvn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="H8k-NK-6DC" secondAttribute="trailing" constant="-10" id="eAa-4V-vtE"/>
-                            <constraint firstItem="MFH-kF-6HL" firstAttribute="top" secondItem="H8k-NK-6DC" secondAttribute="bottom" constant="5" id="gfW-pJ-Jun"/>
-                            <constraint firstItem="H8k-NK-6DC" firstAttribute="top" secondItem="t2W-3E-0E8" secondAttribute="bottom" constant="64" id="mVs-P3-1af"/>
-                            <constraint firstItem="H8k-NK-6DC" firstAttribute="centerX" secondItem="OJP-D7-Apa" secondAttribute="centerX" id="ta4-6u-Kss"/>
+                            <constraint firstItem="MFH-kF-6HL" firstAttribute="top" secondItem="H8k-NK-6DC" secondAttribute="bottom" constant="5" id="1qf-vd-Ni3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="H8k-NK-6DC" secondAttribute="trailing" constant="-9" id="2Xi-ns-Gum"/>
+                            <constraint firstItem="uPn-PS-dZC" firstAttribute="top" secondItem="t2W-3E-0E8" secondAttribute="bottom" id="4Hs-1v-6Ym"/>
+                            <constraint firstAttribute="trailing" secondItem="uPn-PS-dZC" secondAttribute="trailing" id="5Ne-jQ-i0c"/>
+                            <constraint firstItem="H8k-NK-6DC" firstAttribute="top" secondItem="uPn-PS-dZC" secondAttribute="bottom" constant="9" id="MfL-fO-0gl"/>
+                            <constraint firstItem="H8k-NK-6DC" firstAttribute="leading" secondItem="OJP-D7-Apa" secondAttribute="leadingMargin" constant="-10" id="NeN-1v-XpB"/>
+                            <constraint firstItem="uPn-PS-dZC" firstAttribute="leading" secondItem="OJP-D7-Apa" secondAttribute="leading" id="RDg-Ij-WcC"/>
+                            <constraint firstItem="uPn-PS-dZC" firstAttribute="centerX" secondItem="H8k-NK-6DC" secondAttribute="centerX" id="oZR-bY-yRB"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JUT-PR-dXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1289,6 +1649,17 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2rePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="J04-4P-7Tz">
                                 <rect key="frame" x="6" y="72" width="363" height="589"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mbH-r9-YcS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="2 OF 10" id="gmg-y5-STL"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1299,17 +1670,18 @@
                             <constraint firstItem="J04-4P-7Tz" firstAttribute="leading" secondItem="dJV-Lz-Aic" secondAttribute="leadingMargin" constant="-10" id="off-ew-6xJ"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WMT-iR-mdi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1955.5" y="-862.5"/>
+            <point key="canvasLocation" x="2380.5" y="-865.5"/>
         </scene>
-        <!--View Controller-->
+        <!--FirstEX-->
         <scene sceneID="dJa-M1-Sem">
             <objects>
-                <viewController storyboardIdentifier="1ex" id="Xgb-Ib-HSt" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="1ex" id="Xgb-Ib-HSt" customClass="FirstEX" customModule="nowHandlingThisShiat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dXY-nY-J8h"/>
                         <viewControllerLayoutGuide type="bottom" id="OoR-C1-IVk"/>
@@ -1318,31 +1690,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IzA-oz-hv3">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IzA-oz-hv3">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="AME-q2-ykz"/>
+                                    <constraint firstAttribute="height" id="bXJ-Tm-BXB"/>
+                                </constraints>
                                 <string key="text">Lay down on the bench with bended legs on the hip bar. Roll up by lifting the head and the upperbody to an upright position. Hands behind the neck increases the load and makes the exercise harder.</string>
                                 <fontDescription key="fontDescription" name="KannadaSangamMN" family="Kannada Sangam MN" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1exPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="a5X-Kg-sdl">
-                                <rect key="frame" x="5" y="72" width="364" height="589"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1exPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="a5X-Kg-sdl">
+                                <rect key="frame" x="5" y="70" width="364" height="589"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzu-14-cBU">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="1 OF 10" id="nwi-9M-HSl"/>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="60" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UmU-o3-1p0">
+                                <rect key="frame" x="98" y="527" width="178" height="94"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="PKJ-XH-aei"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="46"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="UmU-o3-1p0" firstAttribute="centerX" secondItem="uzu-14-cBU" secondAttribute="centerX" id="7xS-e0-w1y"/>
+                            <constraint firstItem="IzA-oz-hv3" firstAttribute="leading" secondItem="uzu-14-cBU" secondAttribute="leading" id="C1b-x2-4cH"/>
                             <constraint firstItem="a5X-Kg-sdl" firstAttribute="centerX" secondItem="Vgw-3c-aGE" secondAttribute="centerX" id="F6r-Sw-H5H"/>
                             <constraint firstItem="a5X-Kg-sdl" firstAttribute="leading" secondItem="Vgw-3c-aGE" secondAttribute="leadingMargin" constant="-11" id="GTx-s3-8rq"/>
+                            <constraint firstItem="uzu-14-cBU" firstAttribute="leading" secondItem="Vgw-3c-aGE" secondAttribute="leading" id="JMq-VG-Hon"/>
                             <constraint firstItem="a5X-Kg-sdl" firstAttribute="top" secondItem="dXY-nY-J8h" secondAttribute="bottom" constant="52" id="KiQ-WF-Qjt"/>
                             <constraint firstItem="OoR-C1-IVk" firstAttribute="top" secondItem="a5X-Kg-sdl" secondAttribute="bottom" constant="6" id="Odi-Ea-wKG"/>
+                            <constraint firstItem="uzu-14-cBU" firstAttribute="top" secondItem="dXY-nY-J8h" secondAttribute="bottom" id="bqT-ZC-cJi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="a5X-Kg-sdl" secondAttribute="trailing" constant="-10" id="d4i-Ft-M6n"/>
+                            <constraint firstItem="IzA-oz-hv3" firstAttribute="top" secondItem="Vgw-3c-aGE" secondAttribute="top" id="eVh-kc-cfQ"/>
+                            <constraint firstItem="UmU-o3-1p0" firstAttribute="leading" secondItem="Vgw-3c-aGE" secondAttribute="leadingMargin" constant="82" id="iND-TU-cyU"/>
+                            <constraint firstItem="UmU-o3-1p0" firstAttribute="centerX" secondItem="a5X-Kg-sdl" secondAttribute="centerX" id="jRz-6f-qpK"/>
+                            <constraint firstItem="OoR-C1-IVk" firstAttribute="top" secondItem="UmU-o3-1p0" secondAttribute="bottom" constant="46" id="o4H-VH-9QY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rOE-FV-cm6"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="TimerLabell" destination="UmU-o3-1p0" id="dgy-20-ZV0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TMU-pG-9tX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699.5" y="-862.5"/>
+            <point key="canvasLocation" x="1146.5" y="-865.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="1CD-5c-gra">
@@ -1401,30 +1810,6 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="dIm-9F-KP7">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dIm-9F-KP7" id="szK-g5-wro">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="8NZ-PS-Ngg">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8NZ-PS-Ngg" id="7Gz-rv-CDg">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Owc-er-1KX">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Owc-er-1KX" id="Tcd-Wx-A2P">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="boE-LE-pLK">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="boE-LE-pLK" id="vHm-CN-a0q">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="H24-rz-DVl">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H24-rz-DVl" id="yQK-UN-XCq">
@@ -1452,7 +1837,7 @@
         <!--Core Exercise-->
         <scene sceneID="mGs-Sg-sqS">
             <objects>
-                <viewController storyboardIdentifier="1re" id="YPM-sg-nG6" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="1re" id="YPM-sg-nG6" customClass="FirstRe" customModule="nowHandlingThisShiat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Mlf-zy-nnP"/>
                         <viewControllerLayoutGuide type="bottom" id="M89-C5-ctu"/>
@@ -1464,8 +1849,8 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cTm-Un-huo">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" id="82g-Gi-7R5"/>
-                                    <constraint firstAttribute="height" id="ojD-27-Qqf"/>
+                                    <constraint firstAttribute="width" id="3n5-31-BeU"/>
+                                    <constraint firstAttribute="height" id="L2f-hN-5Wt"/>
                                 </constraints>
                                 <string key="text">Heavy load. Lay down on the
 back and hold on to the frame of GardenGym.
@@ -1476,26 +1861,56 @@ Move the legs to a parallel position from side to side with the hip in a constan
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1rePH.png" translatesAutoresizingMaskIntoConstraints="NO" id="0eT-8E-BB9">
                                 <rect key="frame" x="6" y="73" width="362" height="588"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzP-bt-xpN">
+                                <rect key="frame" x="98" y="537" width="178" height="94"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="Fom-7a-xFv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="46"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7b-sA-er6">
+                                <rect key="frame" x="0.0" y="18" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="4SM-6s-MSd"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="1 OF 10" id="7Dl-Y0-Tmo"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="0eT-8E-BB9" firstAttribute="centerX" secondItem="mPs-mL-NM9" secondAttribute="centerX" id="54J-c9-ZSR"/>
-                            <constraint firstItem="cTm-Un-huo" firstAttribute="leading" secondItem="mPs-mL-NM9" secondAttribute="leading" id="7Dk-WZ-Q4x"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="0eT-8E-BB9" secondAttribute="trailing" constant="-9" id="8zA-uk-q0E"/>
-                            <constraint firstItem="M89-C5-ctu" firstAttribute="top" secondItem="0eT-8E-BB9" secondAttribute="bottom" constant="6" id="EO5-4I-2kI"/>
-                            <constraint firstItem="cTm-Un-huo" firstAttribute="top" secondItem="mPs-mL-NM9" secondAttribute="top" id="OZr-Lb-BUV"/>
-                            <constraint firstItem="0eT-8E-BB9" firstAttribute="leading" secondItem="mPs-mL-NM9" secondAttribute="leadingMargin" constant="-10" id="a83-CV-0B4"/>
-                            <constraint firstItem="0eT-8E-BB9" firstAttribute="top" secondItem="Mlf-zy-nnP" secondAttribute="bottom" constant="53" id="gye-5d-afl"/>
+                            <constraint firstItem="f7b-sA-er6" firstAttribute="leading" secondItem="mPs-mL-NM9" secondAttribute="leading" id="6vO-b6-xfF"/>
+                            <constraint firstAttribute="trailing" secondItem="f7b-sA-er6" secondAttribute="trailing" id="MIM-Xp-jIg"/>
+                            <constraint firstItem="0eT-8E-BB9" firstAttribute="top" secondItem="f7b-sA-er6" secondAttribute="bottom" constant="11" id="RJd-md-G4h"/>
+                            <constraint firstItem="VzP-bt-xpN" firstAttribute="leading" secondItem="mPs-mL-NM9" secondAttribute="leadingMargin" constant="82" id="aVP-Fs-tSQ"/>
+                            <constraint firstItem="0eT-8E-BB9" firstAttribute="leading" secondItem="mPs-mL-NM9" secondAttribute="leadingMargin" constant="-10" id="bpJ-pH-mf6"/>
+                            <constraint firstItem="VzP-bt-xpN" firstAttribute="centerX" secondItem="f7b-sA-er6" secondAttribute="centerX" id="cKf-nG-Yf8"/>
+                            <constraint firstItem="0eT-8E-BB9" firstAttribute="centerX" secondItem="VzP-bt-xpN" secondAttribute="centerX" id="dnY-bt-cXJ"/>
+                            <constraint firstItem="M89-C5-ctu" firstAttribute="top" secondItem="VzP-bt-xpN" secondAttribute="bottom" constant="36" id="hIj-E6-jwN"/>
+                            <constraint firstItem="f7b-sA-er6" firstAttribute="leading" secondItem="cTm-Un-huo" secondAttribute="leading" id="k8f-2T-nkX"/>
+                            <constraint firstItem="M89-C5-ctu" firstAttribute="top" secondItem="0eT-8E-BB9" secondAttribute="bottom" constant="6" id="khw-q3-fwS"/>
+                            <constraint firstItem="f7b-sA-er6" firstAttribute="top" secondItem="mPs-mL-NM9" secondAttribute="topMargin" constant="18" id="rb2-L5-ZPh"/>
+                            <constraint firstItem="cTm-Un-huo" firstAttribute="top" secondItem="mPs-mL-NM9" secondAttribute="top" id="shq-sX-ULL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Core Exercise" id="p4Z-VN-ErV"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pe3-wZ-PmC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1118.5" y="-862.5"/>
+            <point key="canvasLocation" x="1554.5" y="-862.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Vd9-pz-Yk5">
@@ -1512,6 +1927,17 @@ Move the legs to a parallel position from side to side with the hip in a constan
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2exPH.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uzs-ih-Io5">
                                 <rect key="frame" x="6" y="73" width="364" height="589"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kZW-ZR-So6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="2 OF 10" id="DwR-JA-1vc"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="0.078431372550000003" green="0.2470588235" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -1521,12 +1947,13 @@ Move the legs to a parallel position from side to side with the hip in a constan
                             <constraint firstItem="Myh-5n-nmp" firstAttribute="top" secondItem="Uzs-ih-Io5" secondAttribute="bottom" constant="5" id="YO6-tV-xhe"/>
                         </constraints>
                     </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mV-19-ejI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1539.5" y="-862.5"/>
+            <point key="canvasLocation" x="1964.5" y="-865.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="vv3-PM-LJI">
@@ -1595,6 +2022,24 @@ Move the legs to a parallel position from side to side with the hip in a constan
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ewK-La-g0a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-202.5" y="-928.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZWK-qs-gGv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Nlo-Rz-ddT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sa2-Nm-8Bi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xgb-Ib-HSt" kind="relationship" relationship="rootViewController" id="AkW-00-t7x"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OYp-L2-7CF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699.5" y="-862.5"/>
         </scene>
     </scenes>
     <resources>
