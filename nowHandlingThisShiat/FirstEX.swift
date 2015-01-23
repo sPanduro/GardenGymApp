@@ -13,13 +13,24 @@ class FirstEX: UIViewController{
     //af en eller anden grund crasher programmet når jeg pusher denne viewcontroller.
     // nedenfor er et forsøg på at lave en timer. Kan dog ikke se om den virker, da mit label forsvinder når jeg ser siden i simulatoren. Kender i til det problem?
     
-    var timerCount = 5
-    var timerRunning = false
+    var timerCount = 10
+    var timerRunning = false // for pausing, info button
     var timer : NSTimer = NSTimer()
     
 
     @IBOutlet weak var TimerLabell: UILabel!
     
+    @IBAction func PauseAndStart(sender: AnyObject) {
+        
+        if timerRunning == true{
+            timer.invalidate()
+            timerRunning == false
+        }
+        
+        if timerRunning == false{
+            self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
+        }
+    }
     
     @IBAction func jumptoNew (sender: AnyObject){
         println("mkl")
@@ -32,7 +43,8 @@ class FirstEX: UIViewController{
     func Counting(){
         TimerLabell.text = String(timerCount)
         timerCount -= 1
-        if timerCount == 0{
+        if timerCount < 0{
+            println("g fity")
             self.timer.invalidate()
             jumptoNew(self)
         }
@@ -44,13 +56,15 @@ class FirstEX: UIViewController{
         
         super.viewDidLoad()
         
+        self.navigationController?.navigationBarHidden = true
+
       /*  if timerRunning == false{
             var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
             */
         
-        if timerCount >= 0 && timerRunning == false{
+        if timerCount >= 0{
             self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("Counting"), userInfo: nil, repeats: true)
-            timerRunning == true
+            timerRunning = true
         }
             /*
         else{

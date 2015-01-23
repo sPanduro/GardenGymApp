@@ -10,18 +10,29 @@ import UIKit
 
 
 class ViewController: UIViewController {
-     
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = true
-       }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    /*@IBAction func trial(sender: AnyObject) {
+        
+        let swipe = self.storyboard?.instantiateViewControllerWithIdentifier("switch") as UIPageViewController
+        
+        //let circuitView = CircuitTrainingViewController(nibName: "circuit", bundle: nil)
+        
+        self.navigationController?.pushViewController(swipe, animated: true)
+    }*/
 
     @IBOutlet var FrontP: UIView!
     
@@ -33,9 +44,11 @@ class ViewController: UIViewController {
     }
     
     @IBAction func StartWorkout(sender: AnyObject) {
+
     }
     @IBAction func WorkoutButton(sender: AnyObject) {
         
+    }
     //alternativ til at pushe en view controller:
         
       /*  let circuitView = self.storyboard?.instantiateViewControllerWithIdentifier("circuit") as UIViewController
@@ -45,15 +58,11 @@ class ViewController: UIViewController {
         
         //let circuitView = CircuitTrainingViewController(nibName: "circuit", bundle: nil)
         
-        
-    }
     
-    /*
     
-    }
     //denne kode brugte jeg til at sætte en række pages op man kan swipe igennem. Virker ikke pt, men er lidt i tvivl om det kan betale sig at bruge en page viewcontroller i mit tilfælde? eller er det bedre med en navigation controller?
     
-
+/*
     var myViewControllers = Array(count: 3, repeatedValue:UIViewController())
     
         override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
@@ -63,16 +72,18 @@ class ViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil);
         
-        var vc0 = storyboard.instantiateViewControllerWithIdentifier("core1") as UIViewController
-        var vc1 = storyboard.instantiateViewControllerWithIdentifier("core2") as UIViewController
-        var vc2 = storyboard.instantiateViewControllerWithIdentifier("core3") as UIViewController
-        
-        self.myViewControllers = [vc0, vc1, vc2]
+        var ex1 = storyboard.instantiateViewControllerWithIdentifier("1") as UIViewController
+        var re1 = storyboard.instantiateViewControllerWithIdentifier("2") as UIViewController
+        var ex2 = storyboard.instantiateViewControllerWithIdentifier("3") as UIViewController
+       
+        self.myViewControllers = [ex1, re1, ex2]
         
         pvc.setViewControllers([myViewControllers[0]], direction:.Forward, animated:false, completion:nil)
         
         println("Loaded")
     }
+        
+        
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         var currentIndex =  find(self.myViewControllers, viewController)!+1
@@ -81,18 +92,7 @@ class ViewController: UIViewController {
         }
         return self.myViewControllers[currentIndex]
     }
-    
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
-        var currentIndex =  find(self.myViewControllers, viewController)!-1
-        if currentIndex < 0 {
-            return nil
-        }
-        return self.myViewControllers[currentIndex]
-    }
-
-
-    */
-    
-    
+        */
+      
     
 }
